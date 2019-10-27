@@ -20,10 +20,11 @@ class Song
   end
 
   def self.create_by_name(name)
-    song = self.new
-    song.name = name
-    @@all << song
-    song
+    if not @@all.include?(name)
+      song = self.new
+      song.name = name
+      @@all << song
+      song
   end
 
 
