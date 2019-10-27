@@ -53,7 +53,6 @@ class Song
     song.name = artist_and_song[1]
     @@all << song
     song    
-
   end
 
   def self.destroy_all
