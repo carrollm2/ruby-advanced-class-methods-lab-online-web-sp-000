@@ -51,12 +51,12 @@ class Song
     song.artist_name = artist_and_song[0]
     song.name = artist_and_song[1]
     @@all << song
-    song    
+    song
   end
 
   def self.create_by_filename(mp3)
 
-    
+
 
   def self.destroy_all
     @@all.clear
