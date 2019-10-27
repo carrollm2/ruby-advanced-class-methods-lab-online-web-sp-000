@@ -43,8 +43,8 @@ class Song
 
   def self.alphabetical
     unsorted_song_names = []
-    @@all.each do |song|
-      unsorted_song_names.push(song.name)
+    @@all.each do |s|
+      unsorted_song_names.push(s.name)
     end
     unsorted_song_names.sort
   end
