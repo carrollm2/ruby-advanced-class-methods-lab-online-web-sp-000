@@ -38,7 +38,7 @@ class Song
       self.create_by_name(name)
     else
       searched_song
-    end  
+    end
   end
 
   def save
