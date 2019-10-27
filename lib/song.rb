@@ -54,7 +54,7 @@ class Song
     song
   end
 
-  def self.create_by_filename(mp3)
+  #def self.create_by_filename(mp3)
 
 
 
