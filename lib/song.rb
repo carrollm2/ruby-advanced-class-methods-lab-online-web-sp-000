@@ -59,7 +59,7 @@ class Song
     song = self.new
     song.artist_name = artist_and_song[0]
     song.name = artist_and_song[1]
-    save
+    song.save
   end
 
   def self.destroy_all
