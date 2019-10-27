@@ -45,6 +45,17 @@ class Song
     @@all.sort_by {|s| s.name}
   end
 
+  def self.new_from_filename(mp3)
+    mp3 = "Thundercat - For Love I Come.mp3"
+    artist_and_song = mp3.gsub(".mp3","").split(" - ")
+    song = self.new
+    song.artist_name = artist_and_song[0]
+    song.name = artist_and_song[1]
+    @@all << song
+    song    
+
+  end
+
   def self.destroy_all
     @@all.clear
   end
